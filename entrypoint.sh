@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-ynpm sync $1
+jq -r '.name' package.json|xargs ynpm sync

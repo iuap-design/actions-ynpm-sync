@@ -1,12 +1,6 @@
 # action.yml
 name: 'Ynpm Sync'
 description: 'Sync packages in ynpm'
-inputs:
-  package-name:
-    description: 'Which package to sync'
-    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.package-name }}
